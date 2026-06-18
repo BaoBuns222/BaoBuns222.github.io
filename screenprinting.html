@@ -1,87 +1,55 @@
 <!DOCTYPE html>
-<!--
-    Anything you put in between the double-dash arrow symbols shown around
-    this block of text is designated a 'comment' intended for human coders
-    and ignored by the computer. The top "<!DOCTYPE html>" line of code 
-    declares that this text file is to be interpreted as HTML code.
--->
-
-<html lang=en>
-<!--
-    This opening tag marks the start of the html code.  Everything below
-    until the </html> closing tag is part of this element. "lang" is an
-    attribute defining the language of the website. The value "en" 
-    indicates this site is written in English. We indent the content
-    inside an element to make it easier for people to read and understand.
--->
-
-    <head>
-    <!--Code *about* the website, NOT displayed in the browser window.-->
-
-        <meta charset="UTF-8"> <!--Sets site to use standard characters.-->
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Sizes your site to the visitor's screen size -->
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Your Name">
-        <!--
-            Some tags like "meta" are self-closing. They have "attributes" 
-            but no inner content and they don't need or use a closing tag.
-        -->
-
-        <title>Yourname's Projectname</title>
-        <!--The 'title' is what's displayed in the browser tab.-->
-
+        <title>My Screen Printing Project</title>
         <link rel="stylesheet" href="/style.css">
-        <!--
-            HTML (HyperText Markup Language) code is for the website 
-            content. CSS (Cascading Style Sheets) code is for the website 
-            style. The line above tells the browser the file location and 
-            file name to find this code that you'll write/edit there.
-        -->
-
         <link rel="icon" type="image/png" href="/favicon.png">
-        <!--
-            If you made/found a favicon, export/name it exactly favicon.png
-            and upload to the top level of your repo, then this line of
-            code will use it as your site icon in the browser tab.
-        -->
+        </head>
 
-    </head>
+    <body> <h1>My Screen Printing Project</h1>
+        <p>Welcome to my project page! Here is how I designed and built my custom screen print, from building the physical frame in the woodshop to editing my design in Photoshop.</p>
 
-    <body> <!--Everything to be displayed in the browser window.-->
-          
-        <!--example headings, paragraphs, lists-->
-        <h1>This is the biggest heading (for title, etc)</h1>
-        <p>This is the first paragraph</p>
-        <h2>This is the second biggest heading type</h2>
-        <p>Another paragraph</p>
-        <h2>Another second-biggest-heading</h2>
+        <h2>Building the Frame</h2>
+        <p>Making the physical screen took quite a bit of hands-on work. Here are the steps I went through:</p>
         <ul>
-            <li>use ul for bullet point (unordered) lists</li>
-            <li>use ol for numbered (ordered) lists</li>
+            <li>First, I measured, marked, and cut the wood using the miter saw.</li>
+            <li>Next, I glued and stapled the wood corners together to build a sturdy frame.</li>
+            <li>Finally, I cut the mesh, stretched it as tight as I could over the frame, and stapled, hammered, and taped it down.</li>
         </ul>
 
-        <!--example images (uploaded to repo's "images" directory)-->
-        <img 
-            src="/images/exact_image_name.webp"
-            width="560" 
-            alt="Your description of image in words">
+        <h2>The Digital Design Process</h2>
+        <p>For the artwork, I used Photoshop to prep my design so it would work perfectly with the vinyl cutter. I even recorded some B-roll of my editing process to show the cool before-and-after transitions!</p>
+        <ul>
+            <li>I imported a photograph of myself and turned it into a Smart Object.</li>
+            <li>I used the Magic Wand tool to clear out the background and clean up the edges.</li>
+            <li>To get a high-contrast look, I added a Threshold adjustment layer and played with the sliders.</li>
+            <li>I added a Halftone filter (using the "line" pattern) so it would be much easier to weed the vinyl material later.</li>
+            <li>Finally, I added some text along a curved path to finish the design.</li>
+        </ul>
 
-        <!--example video (or other content from another webpage)-->
+        <h2>Cutting and Pressing</h2>
+        <p>Once my digital file was completely ready, I exported it and sent it to the vinyl cutting machine. I carefully weeded out the negative space of my stencil, which took some patience. To finish it off, 
+            I used the heat transfer press (iron) to melt the stencil onto my mesh and used tape around the edges to block any annoying ink leaks.</p>
+
+        <h2>Project Photos</h2>
+        <img 
+            src="/images/screenprinted_box.webp"
+            width="560" 
+            alt="My completed screen printing frame and printed design">
+
+        <h2>My B-Roll Edit</h2>
         <iframe 
             src="https://drive.google.com/file/d/FILE_ID/preview"
             width="560" height="315"
             allowfullscreen>
         </iframe>
-        <!-- replace FILE_ID in the example link above with the
-             exact text from the equivalent spot within your 
-             actual video's Google Drive shared link -->
+        <hr>
 
-        <!--example links-->
-        <a href="https://baobuns222.github.io/dna.html">DNA Experiment</a>
-        <a href="https://baobuns222.github.io/index.html">Main Menut</a>
-            external page on the web (_blank opens in new tab)</a>
+        <h2>Check out my other pages:</h2>
+        <p><a href="https://baobuns222.github.io/dna.html">DNA Experiment</a></p>
+        <p><a href="https://baobuns222.github.io/index.html">Main Menut</a></p>
 
     </body>
 </html>
