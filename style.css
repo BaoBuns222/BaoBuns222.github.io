@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #525B61;
+  color: #4FA5E1;
+  max-width: 1000px;
+  margin: auto
+}
+
+th, td, tr{
+  width: 500px;
+  text-align: center;
+}
+
+h1, h3{
+  text-align: center;
+}
+
+.emphasized {
+  background-color: #636A70;
+  color: #4FA5E1;
+}
+ 
+h3 {
+  background-color: #767676;
+  color: #60a3d9;
+}
+
+nav li {
+  list-style-type:none;
+  display: inline-block;
+  background-color: #636A70;
+  padding: 10x;
+  Margin: 5px;
+}
+
+nav li:hover {
+  Background-color: gray;
+}
+
+nav {
+  width: 45%;
+  Margin: auto;
+}
+
+Nav a {
+  Color: #4FA5E1;
+  text-decoration: none;
+}
+
+p a {
+  color: #4FA5E1;
+}
