@@ -1,56 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: "Henny Penny", system-ui;
+  font-family: "Roboto", system-ui, sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #525B61;
   color: #4FA5E1;
   max-width: 1000px;
-  margin: auto
+  margin: 0 auto; 
+  line-height: 1.6; 
 }
 
-th, td, tr{
+th, td, tr {
   width: 500px;
   text-align: center;
+  padding: 8px; /
 }
 
-h1, h3{
+h1, h3 {
   text-align: center;
+  font-weight: 700; 
 }
 
 .emphasized {
   background-color: #636A70;
   color: #4FA5E1;
+  padding: 2px 5px; 
+  border-radius: 3px; 
 }
  
 h3 {
   background-color: #767676;
   color: #60a3d9;
-}
-
-nav li {
-  list-style-type:none;
-  display: inline-block;
-  background-color: #636A70;
-  padding: 10x;
-  Margin: 5px;
-}
-
-nav li:hover {
-  Background-color: gray;
+  padding: 10px;
+  border-radius: 5px; 
 }
 
 nav {
-  width: 45%;
-  Margin: auto;
+  text-align: center; 
+  margin: 20px auto;
+  padding: 0;
 }
 
-Nav a {
-  Color: #4FA5E1;
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: #636A70;
+  padding: 10px 15px; 
+  margin: 5px; /
+  border-radius: 5px; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+nav li:hover {
+  background-color: #767676; 
+}
+
+nav a {
+  color: #4FA5E1;
   text-decoration: none;
+  font-weight: 700; 
 }
 
 p a {
   color: #4FA5E1;
+  text-decoration: underline; /* Keeping underlines on text links is better for accessibility */
 }
